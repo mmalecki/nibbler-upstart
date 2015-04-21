@@ -14,3 +14,9 @@ exports.start = function(service, options, cb) {
   assert.equal(typeof name, 'string', 'service name is required and needs to be a string')
   exec('status ' + name + ' | grep "start/running" || start ' + name, options, cb)
 }
+
+exports.stop = function(service, options, cb) {
+  var name = service.name || service
+  assert.equal(typeof name, 'string', 'service name is required and needs to be a string')
+  exec('status ' + name + ' | grep "stop/waiting" || stop ' + name, options, cb)
+}
