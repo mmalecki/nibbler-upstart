@@ -1,0 +1,26 @@
+{
+  "name": "nibbler-upstart",
+  "version": "0.0.0",
+  "description": "upstart integration for nibbler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmalecki/nibbler-upstart"
+  },
+  "keywords": [
+    "nibbler"
+  ],
+  "author": "Maciej Małecki <me@mmalecki.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmalecki/nibbler-upstart/issues"
+  },
+  "homepage": "https://github.com/mmalecki/nibbler-upstart",
+  "dependencies": {
+    "nibbler-exec": "~0.1.0",
+    "strong-service-upstart": "~1.0.2"
+  }
+}
